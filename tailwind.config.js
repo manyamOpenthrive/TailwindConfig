@@ -27,7 +27,7 @@ module.exports = {
             'subtle': 'var(--tw-color-neutral-50)',
             'subtle-alt': 'var(--tw-color-50)',
             'highlight': 'var(--tw-color-neutral-100)',
-            'highlight-alt': 'var(--tw-colo-neutral-neutral-200)',
+            'highlight-alt': 'var(--tw-color-neutral-neutral-200)',
             'inverted': 'var(--tw-color-neutral-950)',
             'weak': 'var(--tw-color-neutral-600)',
             'main': 'var(--tw-color-neutral-700)',
@@ -459,6 +459,7 @@ module.exports = {
           },
         },
       }
+
     },
   },
   plugins: [],
