@@ -26,16 +26,16 @@ const ThemeToggle = () => {
             <button onClick={toggleTheme} className="mt-4 py-2 px-4 bg-brand-main rounded">
                 Toggle Theme
             </button>
-            <h1 className="text-warning-strong dark:text-success-strong text-3xl border border-neutral-900 dark:border-neutral-100 font-bold mb-6">Color Tokens Example</h1>
+            <h1 className="display-sm-semibolditalic text-warning-strong dark:text-success-strong text-3xl border border-neutral-900 dark:border-neutral-100 font-bold mb-6">Color Tokens Example</h1>
 
             {/* Neutral Colors */}
-            <section className="mb-8">
+            <section className="mb-8 heading-container heading h1">
                 <h2 className="bg-neutral-base-inverted text-neutral-base-inverted text-2xl font-semibold mb-4">Neutral Colors</h2>
                 <div className="grid grid-cols-3 gap-4">
                     <div
                         className={`h-16 rounded-lg bg-neutral-base-subtle flex items-center justify-center`}
                     >
-                        <span className="text-neutral-base-strong ">Neutral</span>
+                        <span className="text-h1 text-neutral-base-strong ">Neutral</span>
                     </div>
                 </div>
             </section>
@@ -60,7 +60,7 @@ const ThemeToggle = () => {
             <section className="mb-8 bg-brand-subtle border border-neutral-base-subtle">
                 <h2 className="text-warning-base text-2xl font-semibold mb-4">Warning Alert</h2>
                 <div className="p-4 bg-warning-light border border-warning-base rounded-lg">
-                    <p className="text-warning-base">This is a warning alert!</p>
+                    <p className="subtitle-md-bold text-warning-base">This is a warning alert!</p>
                 </div>
             </section>
 

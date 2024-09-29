@@ -1,5 +1,3 @@
-// shades.js
-
 const neutral = {
     50: '#F8FAFC',
     100: '#F1F5F9',
@@ -84,4 +82,4 @@ const accent = {
 }
 
 // Export the shades
-module.exports = { neutral, success, error, warning, brand, accent };
+export{ neutral, success, error, warning, brand, accent };

@@ -76,4 +76,42 @@
     --tw-color-error-900: #7F1D1D;
     --tw-color-error-950: #450A0A;
     /* Define other color variables similarly */
-  }
+    /* Define CSS variables for typography styles */
+    /* Define CSS variables for typography styles for display-lg, display-md, and display-sm */
+    
+    /* Display-lg */
+    --font-size-display-lg: 60px;
+    --line-height-display-lg: 4.5rem;
+    --para-spacing-lg: 3.75rem; /* Paragraph spacing for display-lg */
+
+    /* Display-md */
+    --font-size-display-md: 48px;
+    --line-height-display-md: 3rem;
+    --para-spacing-md: 3rem; /* Paragraph spacing for display-md */
+
+    /* Display-sm */
+    --font-size-display-sm: 38px;
+    --line-height-display-sm: 2.375rem;
+    --para-spacing-sm: 2.375rem; /* Paragraph spacing for display-sm */
+    --font-letterSpacing: -0.01em;
+
+    /* Define weights and styles */
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+    --font-style-normal: normal;
+    --font-style-italic: italic;
+
+
+        /* Subtitle-md */
+    --font-size-subtitle-md: 24px;
+    --line-height-subtitle-md: 2rem;
+    --para-spacing-md: 1.5rem; /* Paragraph spacing for display-sm */
+
+            /* Subtitle-sm */
+    --font-size-subtitle-sm: 24px;
+    --line-height-subtitle-sm: 1.7rem;
+    --para-spacing-sm: 1.25rem; /* Paragraph spacing for display-sm */
+}
+
