@@ -78,8 +78,8 @@ const accent = {
     700: '#4D7C0F',
     800: '#3F6212',
     900: '#365314',
-    950: '#1A2E05'
+    950: '#365314'
 }
 
 // Export the shades
-export{ neutral, success, error, warning, brand, accent };
+export { neutral, success, error, warning, brand, accent };

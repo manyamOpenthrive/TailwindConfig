@@ -18,7 +18,6 @@ module.exports = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
-
         // Or if using `src` directory:
         "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
@@ -521,6 +520,7 @@ module.exports = {
             fontStyle: {
                 italic: 'var(--font-style-italic)',
             },
+
             // spacing: spacingUnits(),
             spacing: {
                 'none': '0px',
@@ -587,7 +587,85 @@ module.exports = {
                 '7xl': '32px',    // #radius-7xl
                 'round': '9999px' // #radius-round
             },
+            blur: {
+                xs: '2px',
+                sm: '4px',
+                md: '8px',
+                lg: '12px',
+                xl: '16px',
+                '2xl': '24px',
+            },
+            boxShadow: {
+                'xs': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',   // #shadow-xs
+                'sm': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)', // #shadow-sm
+                'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)', // #shadow-md
+                'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)', // #shadow-lg
+                'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)', // #shadow-xl
+                '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',  // #shadow-2xl
+                '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',  // #shadow-3xl (New entry)
+                'none': 'none',
+
+                // Inner shadows
+                'innershadow-xs': 'inset 0 1px 2px 0 rgba(0, 0, 0, 0.05)',   // Subtle depth for small elements
+                'innershadow-sm': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.1)',    // Inner shadow for form fields and buttons
+                'innershadow-md': 'inset 0 4px 6px 0 rgba(0, 0, 0, 0.2)',
+
+                'blur-xs': '0 1px 2px rgba(0, 0, 0, 0.05), 0 0 2px 2px var(--tw-shadow-color)',
+                'blur-sm': '0 2px 4px rgba(0, 0, 0, 0.1), 0 0 4px 4px var(--tw-shadow-color)',
+                'blur-md': '0 4px 6px rgba(0, 0, 0, 0.1), 0 0 8px 8px var(--tw-shadow-color)',
+                'blur-lg': '0 10px 15px rgba(0, 0, 0, 0.1), 0 0 12px 12px var(--tw-shadow-color)',
+                'blur-xl': '0 20px 25px rgba(0, 0, 0, 0.15), 0 0 16px 16px var(--tw-shadow-color)',
+                'blur-2xl': '0 25px 50px rgba(0, 0, 0, 0.25), 0 0 24px 24px var(--tw-shadow-color)',
+
+                // Solid Neutral Gradient Shadows
+                'gradient-neutral-400-500': '0 4px 6px -1px var(--tw-color-neutral-400), 0 2px 4px -1px var(--tw-color-neutral-500)',
+                'gradient-neutral-500-600': '0 4px 6px -1px var(--tw-color-neutral-500), 0 2px 4px -1px var(--tw-color-neutral-600)',
+                'gradient-neutral-600-700': '0 4px 6px -1px var(--tw-color-neutral-600), 0 2px 4px -1px var(--tw-color-neutral-700)',
+                'gradient-neutral-700-800': '0 4px 6px -1px var(--tw-color-neutral-700), 0 2px 4px -1px var(--tw-color-neutral-800)',
+
+                // Soft Neutral Gradient Shadows
+                'gradient-neutral-50-100': '0 2px 3px -1px var(--tw-color-neutral-50), 0 1px 2px -1px var(--tw-color-neutral-100)',
+                'gradient-neutral-100-200': '0 2px 3px -1px var(--tw-color-neutral-100), 0 1px 2px -1px var(--tw-color-neutral-200)',
+                'gradient-neutral-200-300': '0 2px 3px -1px var(--tw-color-neutral-200), 0 1px 2px -1px var(--tw-color-neutral-300)',
+                'gradient-neutral-50-200': '0 2px 3px -1px var(--tw-color-neutral-50), 0 1px 2px -1px var(--tw-color-neutral-200)',
+
+                // Custom Complex Shadows
+                'gradient-neutral-500-600-soft': '0 5px 10px -1px var(--tw-color-neutral-500), 0 3px 6px -1px var(--tw-color-neutral-600)',
+                'gradient-neutral-600-700-soft': '0 5px 10px -1px var(--tw-color-neutral-600), 0 3px 6px -1px var(--tw-color-neutral-700)',
+                'gradient-neutral-700-800-soft': '0 5px 10px -1px var(--tw-color-neutral-700), 0 3px 6px -1px var(--tw-color-neutral-800)',
+            },
+            ringWidth: {
+                // Focus ring sizes
+                DEFAULT: '2px',  // Default ring width for focus
+                subtle: '1px',
+                strong: '4px',
+            },
+            ringColor: {
+                // Focus ring colors
+                'neutral-subtle': 'rgba(0, 0, 0, 0.1)',     // Neutral-subtle
+                'neutral': 'var(--tw-color-neutral-500)',                       // Neutral
+                'neutral-shadow': 'rgba(0, 0, 0, 0.2)',     // Neutral-shadow
+                'brand-subtle': 'rgba(59, 130, 246, 0.4)',  // Brand-subtle
+                'brand': 'var(--tw-color-brand-500)',                         // Brand
+                'brand-shadow': 'rgba(59, 130, 246, 0.6)',  // Brand-shadow
+                'accent-subtle': 'rgba(234, 179, 8, 0.4)',  // Accent-subtle
+                'accent': 'var(--tw-color-accent-500)',                        // Accent
+                'accent-shadow': 'rgba(234, 179, 8, 0.6)',  // Accent-shadow
+                'success': 'var(----tw-color-success-500)',                       // Success (green)
+                'warning': 'var(--tw-color-warning-500)',                       // Warning (yellow)
+                'error': 'var(--tw-color-error-500)',                         // Error (red)
+            },
         }
+    },
+    variants: {
+        extend: {
+            blur: ['hover', 'focus'],
+            boxShadow: ['hover', 'focus'],
+            ringWidth: ['focus'],
+            ringColor: ['focus'],
+            ringOffsetWidth: ['focus'],
+            ringOffsetColor: ['focus'],
+        },
     },
     plugins: [
         function ({ addUtilities }) {
@@ -1008,7 +1086,10 @@ module.exports = {
                     marginBottom: 'var(--para-spacing-label-sm)',
                 },
 
-
+                // '.neutral': {
+                //     ringWidth: 'px',
+                //     ringColor: 'var(--tw-color-neutral-500)',
+                // },
 
             };
             addUtilities(newUtilities, ['responsive']);
