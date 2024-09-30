@@ -23,7 +23,7 @@ const config: Config = {
             'subtle': 'var(--tw-color-neutral-50)',
             'subtle-alt': 'var(--tw-color-50)',
             'highlight': 'var(--tw-color-neutral-100)',
-            'highlight-alt': 'var(--tw-colo-neutral-neutral-200)',
+            'highlight-alt': 'var(--tw-color-neutral-neutral-200)',
             'inverted': 'var(--tw-color-neutral-950)',
             'weak': 'var(--tw-color-neutral-600)',
             'main': 'var(--tw-color-neutral-700)',
@@ -454,28 +454,123 @@ const config: Config = {
             'display': 'var(--tw-color-error-500)',
           },
         },
-        fontSize: {
-          // Add custom font sizes linked to CSS variables
-          'display-lg': 'var(--font-size-display-lg)',
-          'display-md': 'var(--font-size-display-md)',
-          'display-sm': 'var(--font-size-display-sm)',
-        },
-        lineHeight: {
-          // Add custom line heights linked to CSS variables
-          'display-lg': 'var(--line-height-display-lg)',
-          'display-md': 'var(--line-height-display-md)',
-          'display-sm': 'var(--line-height-display-sm)',
-        },
-        fontWeight: {
-          // Add custom font weights linked to CSS variables
-          regular: 'var(--font-weight-regular)',
-          semibold: 'var(--font-weight-semibold)',
-          bold: 'var(--font-weight-bold)',
-          medium: 'var(--font-weight-medium)',
-        },
-        fontStyle: {
-          italic: 'var(--font-style-italic)',
-        },
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        // Add custom font sizes linked to CSS variables
+        'display-lg': 'var(--font-size-display-lg)',
+        'display-md': 'var(--font-size-display-md)',
+        'display-sm': 'var(--font-size-display-sm)',
+        'h1': ['48px', '3rem'], // font-size / line-height for H1
+        'h2': ['38px', '2.375rem'], // font-size / line-height for H2
+        'h3': ['28px', '1.75rem'], // font-size / line-height for H3
+        'subtitle-md': 'var(--font-size-subtitle-md)',
+        'subtitle-sm': 'var(--font-size-subtitle-sm)',
+        'body-xl': 'var(--font-size-body-xl)',
+        'body-lg': 'var(--font-size-body-lg)',
+        'body-md': 'var(--font-size-body-md)',
+        'body-sm': 'var(--font-size-body-sm)',
+        'body-xs': 'var(--font-size-body-xs)',
+        'label-lg': 'var(--font-size-label-lg)',
+        'label-md': 'var(--font-size-label-md)',
+        'label-sm': 'var(--font-size-label-sm)',
+      },
+      lineHeight: {
+        // Add custom line heights linked to CSS variables
+        'display-lg': 'var(--line-height-display-lg)',
+        'display-md': 'var(--line-height-display-md)',
+        'display-sm': 'var(--line-height-display-sm)',
+        'h1': '60px', // Line height for H1
+        'h2': '48px', // Line height for H2
+        'h3': '36px', // Line height for H3
+        'subtitle-md': 'var(--line-height-subtitle-md)',
+        'subtitle-sm': 'var(--line-height-subtitle-sm)',
+        'body-xl': 'var(--line-height-body-xl)',
+        'body-lg': 'var(--line-height-body-lg)',
+        'body-md': 'var(--line-height-body-md)',
+        'body-sm': 'var(--line-height-body-sm)',
+        'body-xs': 'var(--line-height-body-xs)',
+        'label-lg': 'var(--line-height-label-lg)',
+        'label-md': 'var(--line-height-label-md)',
+        'label-sm': 'var(--line-height-label-sm)',
+      },
+      fontWeight: {
+        // Add custom font weights linked to CSS variables
+        regular: 'var(--font-weight-regular)',
+        semibold: 'var(--font-weight-semibold)',
+        bold: 'var(--font-weight-bold)',
+        medium: 'var(--font-weight-medium)',
+      },
+      fontStyle: {
+        italic: 'var(--font-style-italic)',
+      },
+      spacing: {
+        'none': '0px',
+        '3xs': '2px',    // #spacing-3xs
+        '2xs': '4px',    // #spacing-2xs
+        'sm-alpha': '6px',  // #spacing-sm-alpha
+        'md': '8px',     // #spacing-md
+        'md-alpha': '10px',  // #spacing-md-alpha
+        'lg': '12px',    // #spacing-lg
+        'lg-alpha': '14px',  // #spacing-lg-alpha
+        'xl': '16px',    // #spacing-xl
+        'xl-alpha': '18px',  // #spacing-xl-alpha
+        '2xl': '20px',   // #spacing-2xl
+        '2xl-alpha': '22px',  // #spacing-2xl-alpha
+        '3xl': '24px',   // #spacing-3xl
+        '4xl': '32px',   // #spacing-4xl
+        '5xl': '40px',   // #spacing-5xl
+        '6xl': '48px',   // #spacing-6xl
+        '7xl': '56px',   // #spacing-7xl
+        '8xl': '64px',   // #spacing-8xl
+        '9xl': '80px',   // #spacing-9xl
+        '10xl': '96px',  // #spacing-10xl
+        '11xl': '128px', // #spacing-11xl
+        '12xl': '160px', // #spacing-12xl
+
+        'size-12': '12px',
+        'size-16': '16px',
+        'size-20': '20px',
+        'size-24': '24px',
+        'size-32': '32px',
+        'size-48': '48px',
+        'size-64': '64px',
+        'size-80': '80px',
+        'size-96': '96px',
+        'size-112': '112px',
+        'size-128': '128px',
+        'size-144': '144px',
+        'size-160': '160px',
+        'size-176': '176px',
+        'size-192': '192px',
+        'size-208': '208px',
+        'size-224': '224px',
+        'size-240': '240px',
+        'size-256': '256px',
+        'size-288': '288px',
+        'size-320': '320px',
+        'size-384': '384px',
+        'size-448': '448px',
+        'size-512': '512px',
+        'size-576': '576px',
+        'size-640': '640px',
+      },
+      borderRadius: {
+        'none': '0px',    // #radius-none
+        'sm': '2px',      // #radius-sm
+        'md': '4px',      // #radius-md
+        'lg': '6px',      // #radius-lg
+        'xl': '8px',      // #radius-xl
+        '2xl': '12px',    // #radius-2xl
+        '3xl': '16px',    // #radius-3xl
+        '4xl': '20px',    // #radius-4xl
+        '5xl': '24px',    // #radius-5xl
+        '6xl': '28px',    // #radius-6xl
+        '7xl': '32px',    // #radius-7xl
+        'round': '9999px' // #radius-round
+      },
     }
   },
   plugins: [
@@ -487,6 +582,7 @@ const config: Config = {
           letterSpacing: 'var(--font-letterSpacing)',
           fontWeight: 'var(--font-weight-semibold)',
           fontStyle: 'var(--font-style-italic)',
+          marginBottom: 'var(--para-spacing-lg)',
         },
         '.display-lg-bolditalic': {
           fontSize: 'var(--font-size-display-lg)',
@@ -584,6 +680,7 @@ const config: Config = {
           letterSpacing: 'var(--font-letterSpacing)',
           fontStyle: 'var(--font-style-italic)',
         },
+
         // Small display (sm)
         '.display-sm-semibolditalic': {
           fontSize: 'var(--font-size-display-sm)',
@@ -636,10 +733,271 @@ const config: Config = {
           letterSpacing: 'var(--font-letterSpacing)',
           fontStyle: 'var(--font-style-italic)',
         },
+
+        // Subtitles    md
+        '.subtitle-md': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-subtitle-md)',
+          lineHeight: 'var(--line-height-subtitle-md)',
+        },
+        '.subtitle-md-semibolditalic': {
+          fontWeight: 'var(--font-weight-semibold)',
+          fontStyle: 'var(--font-style-italic)',
+        },
+        '.subtitle-md-bolditalic': {
+          fontWeight: 'var(--font-weight-bold)',
+          fontStyle: 'var(--font-style-italic)',
+        },
+        '.subtitle-md-mediumitalic': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontStyle: 'var(--font-style-italic)',
+        },
+        '.subtitle-md-semibold': {
+          fontWeight: 'var(--font-weight-semibold)',
+        },
+        '.subtitle-md-bold': {
+          fontWeight: 'var(--font-weight-bold)',
+        },
+        '.subtitle-md-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+        },
+        '.subtitle-md-italic': {
+          fontStyle: 'var(--font-style-italic)',
+        },
+        // Subtitle sm
+        '.subtitle-sm': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-subtitle-sm)',
+          lineHeight: 'var(--line-height-subtitle-sm)',
+        },
+        '.subtitle-sm-semibolditalic': {
+          fontWeight: 'var(--font-weight-semibold)',
+          fontStyle: 'var(--font-style-italic)',
+        },
+        '.subtitle-sm-bolditalic': {
+          fontWeight: 'var(--font-weight-bold)',
+          fontStyle: 'var(--font-style-italic)',
+        },
+        '.subtitle-sm-mediumitalic': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontStyle: 'var(--font-style-italic)',
+        },
+        '.subtitle-sm-semibold': {
+          fontWeight: 'var(--font-weight-semibold)',
+        },
+        '.subtitle-sm-bold': {
+          fontWeight: 'var(--font-weight-bold)',
+        },
+        '.subtitle-sm-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+        },
+        '.subtitle-sm-italic': {
+          fontStyle: 'var(--font-style-italic)',
+        },
+
+        // Body - xl
+        '.body-xl': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-xl)',
+          lineHeight: 'var(--line-height-body-xl)',
+          marginBottom: 'var(--para-spacing-xl)',
+        },
+        '.body-xl-italic': {
+          fontStyle: 'var(--font-style-italic)',
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-xl)',
+          lineHeight: 'var(--line-height-body-xl)',
+          marginBottom: 'var(--para-spacing-xl)',
+        },
+        '.body-xl-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-body-xl)',
+          lineHeight: 'var(--line-height-body-xl)',
+          marginBottom: 'var(--para-spacing-xl)',
+        },
+        '.body-xl-mediumitalic': {
+          fontSize: 'var(--font-size-body-xl)',
+          lineHeight: 'var(--line-height-body-xl)',
+          fontWeight: 'var(--font-weight-medium)',
+          fontStyle: 'var(--font-style-italic)',
+          marginBottom: 'var(--para-spacing-xl)',
+        },
+
+        // Body Lg
+        '.body-lg': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-lg)',
+          lineHeight: 'var(--line-height-body-lg)',
+          marginBottom: 'var(--para-spacing-lg)',
+        },
+        '.body-lg-italic': {
+          fontStyle: 'var(--font-style-italic)',
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-lg)',
+          lineHeight: 'var(--line-height-body-lg)',
+          marginBottom: 'var(--para-spacing-lg)',
+        },
+        '.body-lg-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-body-lg)',
+          lineHeight: 'var(--line-height-body-lg)',
+          marginBottom: 'var(--para-spacing-lg)',
+        },
+        '.body-lg-mediumitalic': {
+          fontSize: 'var(--font-size-body-lg)',
+          lineHeight: 'var(--line-height-body-lg)',
+          fontWeight: 'var(--font-weight-medium)',
+          fontStyle: 'var(--font-style-italic)',
+          marginBottom: 'var(--para-spacing-lg)',
+        },
+
+        // Body - md
+        '.body-md': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-md)',
+          lineHeight: 'var(--line-height-body-md)',
+          marginBottom: 'var(--para-spacing-md)',
+        },
+        '.body-md-italic': {
+          fontStyle: 'var(--font-style-italic)',
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-md)',
+          lineHeight: 'var(--line-height-body-md)',
+          marginBottom: 'var(--para-spacing-md)',
+        },
+        '.body-md-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-body-md)',
+          lineHeight: 'var(--line-height-body-md)',
+          marginBottom: 'var(--para-spacing-md)',
+        },
+        '.body-md-mediumitalic': {
+          fontSize: 'var(--font-size-body-md)',
+          lineHeight: 'var(--line-height-body-md)',
+          fontWeight: 'var(--font-weight-medium)',
+          fontStyle: 'var(--font-style-italic)',
+          marginBottom: 'var(--para-spacing-md)',
+        },
+
+        // body - sm
+        '.body-sm': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-sm)',
+          lineHeight: 'var(--line-height-body-sm)',
+          marginBottom: 'var(--para-spacing-lg)',
+        },
+        '.body-sm-italic': {
+          fontStyle: 'var(--font-style-italic)',
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-sm)',
+          lineHeight: 'var(--line-height-body-sm)',
+          marginBottom: 'var(--para-spacing-sm)',
+        },
+        '.body-sm-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-body-sm)',
+          lineHeight: 'var(--line-height-body-sm)',
+          marginBottom: 'var(--para-spacing-sm)',
+        },
+        '.body-sm-mediumitalic': {
+          fontSize: 'var(--font-size-body-sm)',
+          lineHeight: 'var(--line-height-body-sm)',
+          fontWeight: 'var(--font-weight-medium)',
+          fontStyle: 'var(--font-style-italic)',
+          marginBottom: 'var(--para-spacing-sm)',
+        },
+
+        // body - xs
+        '.body-xs': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-xs)',
+          lineHeight: 'var(--line-height-body-xs)',
+          marginBottom: 'var(--para-spacing-xs)',
+        },
+        '.body-xs-italic': {
+          fontStyle: 'var(--font-style-italic)',
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-body-xs)',
+          lineHeight: 'var(--line-height-body-xs)',
+          marginBottom: 'var(--para-spacing-xs)',
+        },
+        '.body-xs-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-body-xs)',
+          lineHeight: 'var(--line-height-body-xs)',
+          marginBottom: 'var(--para-spacing-xs)',
+        },
+        '.body-xs-mediumitalic': {
+          fontSize: 'var(--font-size-body-xs)',
+          lineHeight: 'var(--line-height-body-xs)',
+          fontWeight: 'var(--font-weight-medium)',
+          fontStyle: 'var(--font-style-italic)',
+          marginBottom: 'var(--para-spacing-xs)',
+        },
+
+        '.label-lg': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-label-lg)',
+          lineHeight: 'var(--line-height-label-lg)',
+          marginBottom: 'var(--para-spacing-label-lg)',
+        },
+        '.label-lg-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-label-lg)',
+          lineHeight: 'var(--line-height-label-lg)',
+          marginBottom: 'var(--para-spacing-label-lg)',
+        },
+        '.label-lg-semibold': {
+          fontWeight: 'var(--font-weight-semibold)',
+          fontSize: 'var(--font-size-label-lg)',
+          lineHeight: 'var(--line-height-label-lg)',
+          marginBottom: 'var(--para-spacing-label-lg)',
+        },
+
+        '.label-md': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-label-md)',
+          lineHeight: 'var(--line-height-label-md)',
+          marginBottom: 'var(--para-spacing-label-md)',
+        },
+        '.label-md-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-label-md)',
+          lineHeight: 'var(--line-height-label-md)',
+          marginBottom: 'var(--para-spacing-label-md)',
+        },
+        '.label-md-semibold': {
+          fontWeight: 'var(--font-weight-semibold)',
+          fontSize: 'var(--font-size-label-md)',
+          lineHeight: 'var(--line-height-label-md)',
+          marginBottom: 'var(--para-spacing-label-md)',
+        },
+
+        '.label-sm': {
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-size-label-sm)',
+          lineHeight: 'var(--line-height-label-sm)',
+          marginBottom: 'var(--para-spacing-label-sm)',
+        },
+        '.label-sm-medium': {
+          fontWeight: 'var(--font-weight-medium)',
+          fontSize: 'var(--font-size-label-sm)',
+          lineHeight: 'var(--line-height-label-sm)',
+          marginBottom: 'var(--para-spacing-label-sm)',
+        },
+        '.label-sm-semibold': {
+          fontWeight: 'var(--font-weight-semibold)',
+          fontSize: 'var(--font-size-label-sm)',
+          lineHeight: 'var(--line-height-label-sm)',
+          marginBottom: 'var(--para-spacing-label-sm)',
+        },
+
+
+
       };
       addUtilities(newUtilities, ['responsive']);
     }
   ],
 }
-}
+
 export default config;

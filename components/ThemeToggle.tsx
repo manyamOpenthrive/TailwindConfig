@@ -26,7 +26,7 @@ const ThemeToggle = () => {
             <button onClick={toggleTheme} className="mt-4 py-2 px-4 bg-brand-main rounded">
                 Toggle Theme
             </button>
-            <h1 className="display-sm-semibolditalic text-warning-strong dark:text-success-strong text-3xl border border-neutral-900 dark:border-neutral-100 font-bold mb-6">Color Tokens Example</h1>
+            <h1 className="display-sm-semibolditalic rounded-xl text-warning-strong dark:text-success-strong text-3xl border border-neutral-900 dark:border-neutral-100 font-bold mb-6">Color Tokens Example</h1>
 
             {/* Neutral Colors */}
             <section className="mb-8 heading-container heading h1">
@@ -60,6 +60,7 @@ const ThemeToggle = () => {
             <section className="mb-8 bg-brand-subtle border border-neutral-base-subtle">
                 <h2 className="subtitle-md-mediumitalic text-warning-base text-2xl mb-4">Warning Alert</h2>
                 <div className="p-4 bg-warning-light border border-warning-base rounded-lg">
+                    <p className='label-sm-semibold'>New One</p>
                     <p className="body-xl-mediumitalic text-error-weak">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                 </div>
             </section>
@@ -67,7 +68,7 @@ const ThemeToggle = () => {
             {/* Brand Button */}
             <section>
                 <h2 className="text-brand-base text-2xl font-semibold mb-4">Brand Button</h2>
-                <button className="bg-brand-base text-white py-2 px-4 rounded-lg hover:bg-brand-dark">
+                <button className="bg-success-main  border border-neutral-base-divider text-white py-2 px-4 rounded-lg hover:bg-brand-dark">
                     Brand Button
                 </button>
             </section>

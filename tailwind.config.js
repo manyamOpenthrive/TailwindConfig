@@ -2,6 +2,17 @@
 // tailwind.config.js
 import { neutral, success, error, warning, brand } from "./color";
 
+
+// const spacingUnits = () => {
+//     const units = {};
+//     // Define the range for units (e.g., from 0 to 160)
+//     for (let i = 0; i <= 160; i += 2) {
+//         units[`unit-${i}`] = `${i}px`; // Generate the unit classes like unit-0, unit-2, etc.
+//     }
+//     return units;
+// };
+
+
 module.exports = {
     content: [
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -510,6 +521,72 @@ module.exports = {
             fontStyle: {
                 italic: 'var(--font-style-italic)',
             },
+            // spacing: spacingUnits(),
+            spacing: {
+                'none': '0px',
+                '3xs': '2px',    // #spacing-3xs
+                '2xs': '4px',    // #spacing-2xs
+                'sm-alpha': '6px',  // #spacing-sm-alpha
+                'md': '8px',     // #spacing-md
+                'md-alpha': '10px',  // #spacing-md-alpha
+                'lg': '12px',    // #spacing-lg
+                'lg-alpha': '14px',  // #spacing-lg-alpha
+                'xl': '16px',    // #spacing-xl
+                'xl-alpha': '18px',  // #spacing-xl-alpha
+                '2xl': '20px',   // #spacing-2xl
+                '2xl-alpha': '22px',  // #spacing-2xl-alpha
+                '3xl': '24px',   // #spacing-3xl
+                '4xl': '32px',   // #spacing-4xl
+                '5xl': '40px',   // #spacing-5xl
+                '6xl': '48px',   // #spacing-6xl
+                '7xl': '56px',   // #spacing-7xl
+                '8xl': '64px',   // #spacing-8xl
+                '9xl': '80px',   // #spacing-9xl
+                '10xl': '96px',  // #spacing-10xl
+                '11xl': '128px', // #spacing-11xl
+                '12xl': '160px', // #spacing-12xl
+
+                'size-12': '12px',
+                'size-16': '16px',
+                'size-20': '20px',
+                'size-24': '24px',
+                'size-32': '32px',
+                'size-48': '48px',
+                'size-64': '64px',
+                'size-80': '80px',
+                'size-96': '96px',
+                'size-112': '112px',
+                'size-128': '128px',
+                'size-144': '144px',
+                'size-160': '160px',
+                'size-176': '176px',
+                'size-192': '192px',
+                'size-208': '208px',
+                'size-224': '224px',
+                'size-240': '240px',
+                'size-256': '256px',
+                'size-288': '288px',
+                'size-320': '320px',
+                'size-384': '384px',
+                'size-448': '448px',
+                'size-512': '512px',
+                'size-576': '576px',
+                'size-640': '640px',
+            },
+            borderRadius: {
+                'none': '0px',    // #radius-none
+                'sm': '2px',      // #radius-sm
+                'md': '4px',      // #radius-md
+                'lg': '6px',      // #radius-lg
+                'xl': '8px',      // #radius-xl
+                '2xl': '12px',    // #radius-2xl
+                '3xl': '16px',    // #radius-3xl
+                '4xl': '20px',    // #radius-4xl
+                '5xl': '24px',    // #radius-5xl
+                '6xl': '28px',    // #radius-6xl
+                '7xl': '32px',    // #radius-7xl
+                'round': '9999px' // #radius-round
+            },
         }
     },
     plugins: [
@@ -930,8 +1007,14 @@ module.exports = {
                     lineHeight: 'var(--line-height-label-sm)',
                     marginBottom: 'var(--para-spacing-label-sm)',
                 },
+
+
+
             };
             addUtilities(newUtilities, ['responsive']);
         }
     ],
 };
+
+
+
